@@ -1,5 +1,11 @@
 Squash NEWS
 
+Changes in version 1.0.7 (2015-08-01)
+
+- Minor adjustments to DESCRIPTION and NAMESPACE to address CRAN check complaints
+- Removed links in Rd files to non-essential packages
+
+
 Changes in version 1.0.6 (2014-08-04)
 
 - Minor documentation adjustments to address CRAN check complaints

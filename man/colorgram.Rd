@@ -40,7 +40,7 @@ colorgram(x = NULL, y = NULL, z = NULL, zsize = 1,
   Invisibly, \code{map}.
 }
 \seealso{  
-If this is not quite what you are looking for, consider \code{\link[graphics]{image}}, \code{\link[graphics]{filled.contour}}, or \code{\link[lattice]{levelplot}}.  Also \code{\link[plotrix]{color2D.matplot}} in the \pkg{plotrix} package.
+If this is not quite what you are looking for, consider \code{\link[graphics]{image}}, \code{\link[graphics]{filled.contour}}, or \code{\link[lattice]{levelplot}}.  Also \code{color2D.matplot} in the \pkg{plotrix} package.
 }
 \examples{
 

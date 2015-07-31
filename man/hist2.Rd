@@ -40,7 +40,7 @@ hist2(x, y = NULL,
 \seealso{ 
 \code{\link[graphics]{hist}}, for a standard (univariate) histogram.
 
-\code{\link[gplots]{hist2d}} in the \pkg{gplots} package for another implementation. 
+\code{hist2d} in the \pkg{gplots} package for another implementation. 
 
 The \pkg{hexbin} package, for a hexagonal implementation.
 }

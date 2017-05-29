@@ -1,5 +1,10 @@
 Squash NEWS
 
+Changes in version 1.0.8 (2017-05-29)
+
+- Modernized package dependencies: "Depends" are now "Imports"
+
+
 Changes in version 1.0.7 (2015-08-01)
 
 - Minor adjustments to DESCRIPTION and NAMESPACE to address CRAN check complaints

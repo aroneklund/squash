@@ -1,9 +1,36 @@
 # Export all names
 exportPattern(".")
 
-# Import all packages listed as Imports or Depends
-import(
-  graphics, grDevices
+importFrom("grDevices", 
+    "dev.off", 
+    "gray", 
+    "rainbow", 
+    "xy.coords",
+    "xyz.coords"
 )
-importFrom("stats", "as.dendrogram", "order.dendrogram")
-importFrom("methods", "is")
+             
+importFrom("graphics", 
+    "axis", 
+    "box", 
+    "clip", 
+    "grconvertX",
+    "grconvertY", 
+    "layout", 
+    "par", 
+    "plot", 
+    "polygon",
+    "rasterImage", 
+    "rect", 
+    "strheight", 
+    "strwidth", 
+    "text"
+)
+
+importFrom("stats", 
+    "as.dendrogram", 
+    "order.dendrogram"
+)
+
+importFrom("methods", 
+    "is"
+)

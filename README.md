@@ -15,7 +15,7 @@ You can install the latest release from CRAN like this:
 	install.packages("squash")
 
 
-You can install the latest development version from GitHub like this:
+Or you can install the latest development version from GitHub like this:
 
-	library(devtools)
-	install_github("aroneklund/squash")
+	## install.packages(devtools)
+	devtools::install_github("aroneklund/squash")

@@ -1,5 +1,10 @@
 Squash NEWS
 
+Changes in version 1.0.9 (2020-02-19)
+
+- Examples now work in latest R-devel
+
+
 Changes in version 1.0.8 (2017-05-29)
 
 - Modernized package dependencies: "Depends" are now "Imports"

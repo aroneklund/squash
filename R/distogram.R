@@ -63,7 +63,7 @@ trianglegram <- function(x, labels = rownames(x),
 
 distogram <- function(x, map, n = 10, base = NA, colFn = heat,
     key = TRUE, title = NA, ...) {
-  if(class(x) == 'dist') x <- as.matrix(x)
+  if(inherits(x, 'dist')) x <- as.matrix(x)
   stopifnot(nrow(x) == ncol(x))
   if (missing(map)) {
     map <- makecmap(x, n = n, base = base, colFn = colFn)

@@ -473,7 +473,7 @@ dendromat <- function(x, mat,
 ######### functions to draw color keys ###########
 
 
-vkey <- function(map, title = NA, side = 2, stretch = 1.4, x, y, skip, wh) {
+vkey <- function(map, title = NA, side = 2, stretch = 1.4, x, y, skip, wh, cex.title = 1, font.title = 1) {
   if (!missing(skip) && !missing(wh)) stop("cannot specify both 'skip' and 'wh'")
   opar <- par(xpd = NA)
   on.exit(par(opar))
@@ -510,18 +510,18 @@ vkey <- function(map, title = NA, side = 2, stretch = 1.4, x, y, skip, wh) {
   rect(x, ybord[-n], x + dx, ybord[-1], col = map$colors, border = NA)
   if (side == 4) {
     xtext <- x + dx
-    text(x = x, y = ybord[n] + (1.5 * dy), title, adj = c(0, 0))
+    text(x = x, y = ybord[n] + (1.5 * dy), title, adj = c(0, 0), cex = cex.title, font = font.title)
   }
   if (side == 2) {
     xtext <- x
-    text(x = x + dx, y = ybord[n] + (1.5 * dy), title, adj = c(1, 0))
+    text(x = x + dx, y = ybord[n] + (1.5 * dy), title, adj = c(1, 0), cex = cex.title, font = font.title)
   }
   text(x = xtext, y = ybord[wh],
     labels = labs, pos = side)
 }
 
 
-hkey <- function(map, title = NA, side = 1, stretch = 1.4, x, y, skip, wh) {
+hkey <- function(map, title = NA, side = 1, stretch = 1.4, x, y, skip, wh, cex.title = 1, font.title = 1) {
   if (!missing(skip) && !missing(wh)) stop("cannot specify both 'skip' and 'wh'")
   opar <- par(xpd = NA)
   on.exit(par(opar))
@@ -556,11 +556,11 @@ hkey <- function(map, title = NA, side = 1, stretch = 1.4, x, y, skip, wh) {
   rect(xbord[-n], y, xbord[-1], y + dy, col = map$colors, border = NA)
   if (side == 1) {
     ytext <- y
-    text(x = x, y = y + (1.5 * dy), title, adj = c(0, 0))
+    text(x = x, y = y + (1.5 * dy), title, adj = c(0, 0), cex = cex.title, font = font.title)
   }
   if (side == 3) {
     ytext <- y + dy
-    text(x = x, y = y - (0.5 * dy), title, adj = c(0, 1))
+    text(x = x, y = y - (0.5 * dy), title, adj = c(0, 1), cex = cex.title, font = font.title)
   }
   text(x = xbord[wh], y = ytext,
     labels = format(map$breaks[wh]), pos = side)

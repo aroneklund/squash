@@ -1,5 +1,10 @@
 Squash NEWS
 
+Changes in version 1.1.0 (2023-05-23)
+
+- New arguments "cex.title" and "font.title" for the functions "vkey" and "hkey". 
+
+
 Changes in version 1.0.9 (2020-02-19)
 
 - Examples now work in latest R-devel

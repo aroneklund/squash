@@ -7,9 +7,6 @@ squash
 An R package providing functions for color-based visualization of multivariate data,
 i.e. colorgrams or heatmaps
 
-You can see some examples here:
-http://www.cbs.dtu.dk/~eklund/squash/
-
 
 Installation
 ------------

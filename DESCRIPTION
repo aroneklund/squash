@@ -1,6 +1,6 @@
 Package: squash
-Version: 1.0.9
-Date: 2020-02-19
+Version: 1.1.0
+Date: 2023-05-23
 Title: Color-Based Plots for Multivariate Visualization
 Author: Aron C. Eklund
 Maintainer: Aron C. Eklund <aroneklund@gmail.com>

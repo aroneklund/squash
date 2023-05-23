@@ -56,7 +56,7 @@ A list with the following components:
   map1 <- makecmap(Petal.Length)
   myColors <- cmap(Petal.Length, map = map1)
   plot(Sepal.Length, Sepal.Width, col = myColors, pch = 16)
-  hkey(map1, title = 'Petal.Length')
+  hkey(map1, title = "Petal.Length")
 
   ## Compare the 'breaks' element in the following:
   x <- rnorm(100) * 1000

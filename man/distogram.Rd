@@ -22,11 +22,11 @@ If the input \code{x} is a matrix, the lower triangle is extracted by default (b
 \seealso{ \code{\link{corrogram}} }
 \examples{ 
   ## Distances between European cities
-  distogram(eurodist, title = 'Distance (km)')  
+  distogram(eurodist, title = "Distance (km)")  
 
   ## Some variations
   map <- distogram(eurodist, key = FALSE, colFn = jet, right = TRUE)  
-  vkey(map, title = 'Distance (km)', x = -8)
+  vkey(map, title = "Distance (km)", x = -8)
 
 }
 \keyword{ hplot }

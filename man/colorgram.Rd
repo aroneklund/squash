@@ -45,24 +45,24 @@ If this is not quite what you are looking for, consider \code{\link[graphics]{im
 \examples{
 
   ## median Petal.Length as function of Sepal.Length and Sepal.Width
-  pl <- matapply( iris[,1:3], FUN = median, nx = 20, ny = 15 )
+  pl <- matapply(iris[, 1:3], FUN = median, nx = 20, ny = 15)
 
   ## Draw a colorgram with the default horizontal color key  
-  colorgram(pl, main = 'iris')
+  colorgram(pl, main = "iris")
 
   ## ... or with the vertical color key  
-  colorgram(pl, main = 'iris', key = vkey)
+  colorgram(pl, main = "iris", key = vkey)
 
   ## ... add margin space to improve legibility 
-  op <- par(mar = c(5,4,4,4)+0.1)
-  colorgram(pl, main = 'iris', key = vkey, 
-    key.args = list(skip = 2), zlab = 'Petal\nlength')
+  op <- par(mar = c(5, 4, 4, 4) + 0.1)
+  colorgram(pl, main = "iris", key = vkey, 
+    key.args = list(skip = 2), zlab = "Petal\nlength")
   par(op)
   
   ##  Here is the example from the base function "persp"
-  x <- seq(-10, 10, length= 30)
+  x <- seq(-10, 10, length = 30)
   y <- x
-  f <- function(x,y) { r <- sqrt(x^2+y^2); 10 * sin(r)/(r) }
+  f <- function(x,y) { r <- sqrt(x ^ 2 + y ^ 2); 10 * sin(r) / (r) }
   z <- outer(x, y, f)
   colorgram(x, y, z)
 
@@ -70,7 +70,7 @@ If this is not quite what you are looking for, consider \code{\link[graphics]{im
   colorgram(x, y, z, key.args = list(wh = c(1, 4, 14)))
 
   ## We could also make more space for the key:
-  op <- par(mar = c(7,4,4,2)+0.1)
+  op <- par(mar = c(7, 4, 4, 2) + 0.1)
   colorgram(x, y, z, key.args = list(stretch = 3))
   par(op)
   
@@ -80,10 +80,10 @@ If this is not quite what you are looking for, consider \code{\link[graphics]{im
   contour(x, y, z)
 
   ## Use 'xlabels' and 'ylabels' to create categorical axes
-  colorgram(t(mtcars[,c(2,8:11)]), colFn = heat, 
+  colorgram(t(mtcars[, c(2, 8:11)]), colFn = heat, 
     xlabels = TRUE, ylabels = TRUE, 
-    xlab = NA, ylab = NA, zlab = 'Value', 
-    main = 'Motor car specifications', las = 1)
+    xlab = NA, ylab = NA, zlab = "Value", 
+    main = "Motor car specifications", las = 1)
   
 }
 \keyword{ hplot }

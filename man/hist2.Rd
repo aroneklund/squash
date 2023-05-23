@@ -55,7 +55,7 @@ The \pkg{hexbin} package, for a hexagonal implementation.
 
   ## log-scale color breaks; the old way using 'base'
   ## (notice box removal to make space for the vertical color key)
-  hist2(x, y, base = 2, key = vkey, nz = 5, bty = 'l')
+  hist2(x, y, base = 2, key = vkey, nz = 5, bty = "l")
 
 }
 \keyword{ hplot }

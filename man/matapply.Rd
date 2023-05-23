@@ -56,8 +56,8 @@ This function is essentially a souped-up version of \code{\link{tapply}}.
   colorgram(quakedepth)
 
   ## iris petal length vs. sepal length and width
-  ipl <- matapply(iris[,1:3], FUN = median, nx = 20, ny = 15 )
-  colorgram(ipl, main = 'iris')
+  ipl <- matapply(iris[, 1:3], FUN = median, nx = 20, ny = 15)
+  colorgram(ipl, main = "iris")
     
   ## Example of matrix input; here used to downsample an image 
   colorgram(volcano, colFn = terrain.colors)

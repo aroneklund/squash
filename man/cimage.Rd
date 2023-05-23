@@ -52,8 +52,8 @@ The package \pkg{pixmap} may be more suitable for plotting images that are not d
 
   ## An example using "zsize"
   x <- y <- 1:10
-  zcolor <- matrix( rainbow(100)[outer(x, y)], nrow = 10 )
-  zsize <- matrix( runif(100), nrow = 10 )
+  zcolor <- matrix(rainbow(100)[outer(x, y)], nrow = 10)
+  zsize <- matrix(runif(100), nrow = 10)
   cimage(x, y, zcol = zcolor, zsize = zsize)
 
   ## Another simple example
@@ -80,7 +80,7 @@ The package \pkg{pixmap} may be more suitable for plotting images that are not d
   
   ## An example with non-uniform midpoints and breakpoints
   rg2 <- rg[seq(1, 255, by = 62), seq(1, 255, by = 62)]
-  cimage(x = (1:5)^2, y = c(3, 5, 6, 9, 10, 11), zcol = rg2, 
+  cimage(x = (1:5) ^ 2, y = c(3, 5, 6, 9, 10, 11), zcol = rg2, 
          zsize = matrix(runif(25, min = 0.5), nrow = 5))
     
 }

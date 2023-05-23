@@ -5,7 +5,7 @@
 of the matrix.  }
 \usage{
 savemat(x, filename, map = NULL, outlier = NULL,
-       dev = c('png', 'pdf', 'bmp', 'tiff', 'jpeg'), 
+       dev = c("png", "pdf", "bmp", "tiff", "jpeg"), 
        do.dev.off = TRUE, ...)
 }
 \arguments{
@@ -35,7 +35,7 @@ using \code{\link{cmap}}.
   big.color.matrix <- matrix(rep(colors()[1:625], 16), nrow = 100)
   
   ## save as a PNG
-  savemat(big.color.matrix, file = 'test.png')
+  savemat(big.color.matrix, file = "test.png")
 
 }
 }
